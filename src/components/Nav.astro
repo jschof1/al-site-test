@@ -1,0 +1,96 @@
+<header class="lg:px-16 px-6 bg-black flex flex-wrap items-center lg:py-0 py-2 bg-gray-900">
+    <div class="flex-1 flex justify-between items-center">
+        <a href="" class="text-white font-bold"><i class="icono-instagram"></i> Al Robertson</a>
+    </div>
+
+    <!-- Hamburger / Close Icon -->
+    <label for="menu-toggle" class="pointer-cursor lg:hidden block z-50 relative">
+        <svg id="menu-icon" class="fill-current text-gray-100 w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+    </label>
+    
+    <!-- Hidden input checkbox for menu toggle -->
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+    <!-- Full-screen Menu -->
+    <div id="menu" class="hidden fixed top-0 left-0 w-full h-full bg-black text-white flex items-center justify-center">
+        <!-- Close Icon inside the full-screen menu -->
+        <button id="close-menu" class="absolute top-6 right-6 text-gray-100">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <nav class="text-center">
+            <ul class="space-y-8 text-4xl font-bold">
+                <li class="relative group">
+                    <a href="#" class="hover:text-yellow-500">Work</a>
+                    <!-- Dropdown Menu -->
+                    <ul class="hidden group-hover:block absolute bg-black text-white text-lg space-y-2 p-4 left-0 right-0 mt-4">
+                        <li><a href="#" class="hover:text-yellow-500 block">All</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 block">Showcase</a></li>
+                        <li><a href="#" class="hover:text-yellow-500 block">Branded</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hover:text-yellow-500">About</a></li>
+                <li><a href="#" class="hover:text-yellow-500">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="desktop-menu">
+        <nav>
+            <ul class="lg:flex items-center justify-between text-base text-yellow-300 pt-4 lg:pt-0">
+                <li class="relative group">
+                    <a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-500 cursor-pointer">Work</a>
+                    <!-- Dropdown Menu -->
+                    <ul class="hidden group-hover:block absolute bg-gray-800 text-yellow-300 text-base mt-2 p-2 space-y-2">
+                        <li><a class="block px-4 py-2 hover:bg-gray-700" href="#">All</a></li>
+                        <li><a class="block px-4 py-2 hover:bg-gray-700" href="#">Showcase</a></li>
+                        <li><a class="block px-4 py-2 hover:bg-gray-700" href="#">Branded</a></li>
+                    </ul>
+                </li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-500" href="#">About</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-500" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+    // JavaScript to toggle full-screen menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const fullScreenMenu = document.getElementById('menu');
+    const closeMenuButton = document.getElementById('close-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    // Function to open the full-screen menu
+    const openMenu = () => {
+        fullScreenMenu.classList.remove('hidden');
+        menuIcon.style.display = 'none'; // Hide hamburger icon when menu is open
+    };
+
+    // Function to close the full-screen menu
+    const closeMenu = () => {
+        fullScreenMenu.classList.add('hidden');
+        menuIcon.style.display = 'block'; // Show hamburger icon when menu is closed
+    };
+
+    // Event listener for opening the menu when clicking on the hamburger icon
+    menuToggle.addEventListener('click', openMenu);
+
+    // Event listener for closing the menu when clicking on the close icon
+    closeMenuButton.addEventListener('click', closeMenu);
+
+    // Dropdown behavior for the mobile "Work" item
+    document.querySelectorAll('nav > ul > li').forEach(item => {
+        item.addEventListener('click', () => {
+            const dropdown = item.querySelector('ul');
+            if (dropdown) {
+                dropdown.classList.toggle('hidden');
+            }
+        });
+    });
+</script>

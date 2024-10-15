@@ -1,0 +1,71 @@
+{
+  "about": {
+    "title": "ABOUT US",
+    "description": [
+      "Plains of Yonder is an Emmy-nominated creative studio headed by directors Katrina Crawford and Mark Bashore. We concept, create, and direct narrative and visual solutions that live in diverse forms including film, brand design, physical installations, interactive art, interior design and audio art.",
+      "Each project is approached through an experimental, artistic, and human lens. We come well-equipped with experience, teamwork, plain-speak, laughter, wild bird feathers, and a decent short-wave radio.",
+      "One trait unites our very diverse clientele: they strive to be the most intrepid and artful communicators in their category."
+    ]
+  },
+  "contact": {
+    "title": "CONTACT",
+    "newBusiness": {
+      "title": "New Business Inquiries",
+      "name": "Paul Williamson, Executive Producer",
+      "email": "paulb@plainsofyonder.com"
+    },
+    "generalInquiries": {
+      "title": "General Inquiries",
+      "email": "info@plainsofyonder.com"
+    }
+  },
+  "clients": [
+    "Amazon Studios",
+    "AppleTV",
+    "BBC",
+    "The Bill & Melinda Gates Foundation",
+    "BMW",
+    "The Bob Dylan Center",
+    "The Climate Pledge",
+    "The Cosmopolitan Hotel",
+    "The Drew Hotel",
+    "Filson",
+    "The Government Of Atlantic Canada",
+    "Kohler",
+    "HBO",
+    "Los Angeles World Airports",
+    "Malaria No More",
+    "Museum Of Science & Industry",
+    "Netflix",
+    "New Balance",
+    "NBBJ Architects",
+    "Olson Kundig Architects",
+    "PBS",
+    "REI",
+    "Showtime",
+    "Sierra Nevada Brewing",
+    "Starz",
+    "Westland Distilling"
+  ],
+  "recognition": [
+    {
+      "title": "THE EMMY AWARDS",
+      "details": "Nominee",
+      "project": "The Lord Of The Rings: The Rings Of Power Main Title",
+      "organization": "Academy Of Television Arts & Sciences",
+      "date": "Jan 2024"
+    },
+    {
+      "title": "COMMUNICATION ARTS",
+      "details": "Award Of Excellence",
+      "project": "The Lord Of The Rings: The Rings Of Power Main Title",
+      "date": "Sep 2023"
+    },
+    {
+      "title": "CLIO ENTERTAINMENT AWARDS",
+      "details": "Bronze Award",
+      "project": "The Lord Of The Rings: The Rings Of Power Main Title",
+      "date": "Aug 2023"
+    }
+  ]
+}
